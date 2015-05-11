@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:JavaScriptCoreInjector.xcodeproj">
+      location = "self:/Users/zats/Documents/NSFW-Objective-C/JavaScriptCoreInjector/JSInjector.xcodeproj">
    </FileRef>
 </Workspace>

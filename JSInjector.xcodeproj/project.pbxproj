@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C51ED191B00307800B9E7A0 /* JavaScriptCoreInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C51ED181B00307800B9E7A0 /* JavaScriptCoreInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C51ED311B0030C300B9E7A0 /* JSIInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C51ED2F1B0030C300B9E7A0 /* JSIInjector.h */; };
+		5C3A971B1B00FB74006E15C6 /* JSIInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C3A971A1B00FB74006E15C6 /* JSIInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C51ED191B00307800B9E7A0 /* JSInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C51ED181B00307800B9E7A0 /* JSInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C51ED321B0030C300B9E7A0 /* JSIInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C51ED301B0030C300B9E7A0 /* JSIInjector.m */; };
 		5C51ED341B00341300B9E7A0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C51ED331B00341300B9E7A0 /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5C51ED131B00307800B9E7A0 /* JavaScriptCoreInjector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JavaScriptCoreInjector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C3A971A1B00FB74006E15C6 /* JSIInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSIInjector.h; sourceTree = "<group>"; };
+		5C51ED131B00307800B9E7A0 /* JSInjector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSInjector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C51ED171B00307800B9E7A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C51ED181B00307800B9E7A0 /* JavaScriptCoreInjector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JavaScriptCoreInjector.h; sourceTree = "<group>"; };
-		5C51ED2F1B0030C300B9E7A0 /* JSIInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSIInjector.h; sourceTree = "<group>"; };
+		5C51ED181B00307800B9E7A0 /* JSInjector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSInjector.h; sourceTree = "<group>"; };
 		5C51ED301B0030C300B9E7A0 /* JSIInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSIInjector.m; sourceTree = "<group>"; };
 		5C51ED331B00341300B9E7A0 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -37,7 +37,7 @@
 		5C51ED091B00307800B9E7A0 = {
 			isa = PBXGroup;
 			children = (
-				5C51ED151B00307800B9E7A0 /* JavaScriptCoreInjector */,
+				5C51ED151B00307800B9E7A0 /* JSInjector */,
 				5C51ED141B00307800B9E7A0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,20 +45,21 @@
 		5C51ED141B00307800B9E7A0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5C51ED131B00307800B9E7A0 /* JavaScriptCoreInjector.framework */,
+				5C51ED131B00307800B9E7A0 /* JSInjector.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5C51ED151B00307800B9E7A0 /* JavaScriptCoreInjector */ = {
+		5C51ED151B00307800B9E7A0 /* JSInjector */ = {
 			isa = PBXGroup;
 			children = (
-				5C51ED181B00307800B9E7A0 /* JavaScriptCoreInjector.h */,
-				5C51ED2F1B0030C300B9E7A0 /* JSIInjector.h */,
+				5C51ED181B00307800B9E7A0 /* JSInjector.h */,
+				5C3A971A1B00FB74006E15C6 /* JSIInjector.h */,
 				5C51ED301B0030C300B9E7A0 /* JSIInjector.m */,
 				5C51ED361B00343700B9E7A0 /* Frameworks */,
 				5C51ED161B00307800B9E7A0 /* Supporting Files */,
 			);
+			name = JSInjector;
 			path = JavaScriptCoreInjector;
 			sourceTree = "<group>";
 		};
@@ -86,17 +87,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C51ED311B0030C300B9E7A0 /* JSIInjector.h in Headers */,
-				5C51ED191B00307800B9E7A0 /* JavaScriptCoreInjector.h in Headers */,
+				5C51ED191B00307800B9E7A0 /* JSInjector.h in Headers */,
+				5C3A971B1B00FB74006E15C6 /* JSIInjector.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5C51ED121B00307800B9E7A0 /* JavaScriptCoreInjector */ = {
+		5C51ED121B00307800B9E7A0 /* JSInjector */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C51ED291B00307800B9E7A0 /* Build configuration list for PBXNativeTarget "JavaScriptCoreInjector" */;
+			buildConfigurationList = 5C51ED291B00307800B9E7A0 /* Build configuration list for PBXNativeTarget "JSInjector" */;
 			buildPhases = (
 				5C51ED0E1B00307800B9E7A0 /* Sources */,
 				5C51ED0F1B00307800B9E7A0 /* Frameworks */,
@@ -107,9 +108,9 @@
 			);
 			dependencies = (
 			);
-			name = JavaScriptCoreInjector;
+			name = JSInjector;
 			productName = JavaScriptCoreInjector;
-			productReference = 5C51ED131B00307800B9E7A0 /* JavaScriptCoreInjector.framework */;
+			productReference = 5C51ED131B00307800B9E7A0 /* JSInjector.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -126,7 +127,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5C51ED0D1B00307800B9E7A0 /* Build configuration list for PBXProject "JavaScriptCoreInjector" */;
+			buildConfigurationList = 5C51ED0D1B00307800B9E7A0 /* Build configuration list for PBXProject "JSInjector" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -138,7 +139,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5C51ED121B00307800B9E7A0 /* JavaScriptCoreInjector */,
+				5C51ED121B00307800B9E7A0 /* JSInjector */,
 			);
 		};
 /* End PBXProject section */
@@ -288,7 +289,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5C51ED0D1B00307800B9E7A0 /* Build configuration list for PBXProject "JavaScriptCoreInjector" */ = {
+		5C51ED0D1B00307800B9E7A0 /* Build configuration list for PBXProject "JSInjector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C51ED271B00307800B9E7A0 /* Debug */,
@@ -297,13 +298,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C51ED291B00307800B9E7A0 /* Build configuration list for PBXNativeTarget "JavaScriptCoreInjector" */ = {
+		5C51ED291B00307800B9E7A0 /* Build configuration list for PBXNativeTarget "JSInjector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C51ED2A1B00307800B9E7A0 /* Debug */,
 				5C51ED2B1B00307800B9E7A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

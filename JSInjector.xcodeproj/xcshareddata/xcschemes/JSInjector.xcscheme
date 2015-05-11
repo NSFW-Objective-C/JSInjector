@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5C51ED121B00307800B9E7A0"
-               BuildableName = "JavaScriptCoreInjector.framework"
-               BlueprintName = "JavaScriptCoreInjector"
-               ReferencedContainer = "container:JavaScriptCoreInjector.xcodeproj">
+               BuildableName = "JSInjector.framework"
+               BlueprintName = "JSInjector"
+               ReferencedContainer = "container:JSInjector.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "5C51ED1D1B00307800B9E7A0"
                BuildableName = "JavaScriptCoreInjectorTests.xctest"
                BlueprintName = "JavaScriptCoreInjectorTests"
-               ReferencedContainer = "container:JavaScriptCoreInjector.xcodeproj">
+               ReferencedContainer = "container:JSInjector.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "5C51ED1D1B00307800B9E7A0"
                BuildableName = "JavaScriptCoreInjectorTests.xctest"
                BlueprintName = "JavaScriptCoreInjectorTests"
-               ReferencedContainer = "container:JavaScriptCoreInjector.xcodeproj">
+               ReferencedContainer = "container:JSInjector.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5C51ED121B00307800B9E7A0"
-            BuildableName = "JavaScriptCoreInjector.framework"
-            BlueprintName = "JavaScriptCoreInjector"
-            ReferencedContainer = "container:JavaScriptCoreInjector.xcodeproj">
+            BuildableName = "JSInjector.framework"
+            BlueprintName = "JSInjector"
+            ReferencedContainer = "container:JSInjector.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5C51ED121B00307800B9E7A0"
-            BuildableName = "JavaScriptCoreInjector.framework"
-            BlueprintName = "JavaScriptCoreInjector"
-            ReferencedContainer = "container:JavaScriptCoreInjector.xcodeproj">
+            BuildableName = "JSInjector.framework"
+            BlueprintName = "JSInjector"
+            ReferencedContainer = "container:JSInjector.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5C51ED121B00307800B9E7A0"
-            BuildableName = "JavaScriptCoreInjector.framework"
-            BlueprintName = "JavaScriptCoreInjector"
-            ReferencedContainer = "container:JavaScriptCoreInjector.xcodeproj">
+            BuildableName = "JSInjector.framework"
+            BlueprintName = "JSInjector"
+            ReferencedContainer = "container:JSInjector.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -10,6 +10,7 @@
 
 
 @class Protocol;
+
 extern Protocol *JSIExportClass(Class cls);
 
 extern BOOL JSIIsClassInjected(Class cls);
