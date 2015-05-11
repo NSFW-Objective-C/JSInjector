@@ -8,28 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		5C51ED191B00307800B9E7A0 /* JavaScriptCoreInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C51ED181B00307800B9E7A0 /* JavaScriptCoreInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C51ED1F1B00307800B9E7A0 /* JavaScriptCoreInjector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C51ED131B00307800B9E7A0 /* JavaScriptCoreInjector.framework */; };
 		5C51ED311B0030C300B9E7A0 /* JSIInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C51ED2F1B0030C300B9E7A0 /* JSIInjector.h */; };
 		5C51ED321B0030C300B9E7A0 /* JSIInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C51ED301B0030C300B9E7A0 /* JSIInjector.m */; };
+		5C51ED341B00341300B9E7A0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C51ED331B00341300B9E7A0 /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5C51ED201B00307800B9E7A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5C51ED0A1B00307800B9E7A0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5C51ED121B00307800B9E7A0;
-			remoteInfo = JavaScriptCoreInjector;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5C51ED131B00307800B9E7A0 /* JavaScriptCoreInjector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JavaScriptCoreInjector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C51ED171B00307800B9E7A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C51ED181B00307800B9E7A0 /* JavaScriptCoreInjector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JavaScriptCoreInjector.h; sourceTree = "<group>"; };
-		5C51ED1E1B00307800B9E7A0 /* JavaScriptCoreInjectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JavaScriptCoreInjectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C51ED2F1B0030C300B9E7A0 /* JSIInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSIInjector.h; sourceTree = "<group>"; };
 		5C51ED301B0030C300B9E7A0 /* JSIInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSIInjector.m; sourceTree = "<group>"; };
+		5C51ED331B00341300B9E7A0 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,14 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5C51ED1B1B00307800B9E7A0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5C51ED1F1B00307800B9E7A0 /* JavaScriptCoreInjector.framework in Frameworks */,
+				5C51ED341B00341300B9E7A0 /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				5C51ED131B00307800B9E7A0 /* JavaScriptCoreInjector.framework */,
-				5C51ED1E1B00307800B9E7A0 /* JavaScriptCoreInjectorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +56,7 @@
 				5C51ED181B00307800B9E7A0 /* JavaScriptCoreInjector.h */,
 				5C51ED2F1B0030C300B9E7A0 /* JSIInjector.h */,
 				5C51ED301B0030C300B9E7A0 /* JSIInjector.m */,
+				5C51ED361B00343700B9E7A0 /* Frameworks */,
 				5C51ED161B00307800B9E7A0 /* Supporting Files */,
 			);
 			path = JavaScriptCoreInjector;
@@ -85,6 +68,15 @@
 				5C51ED171B00307800B9E7A0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5C51ED361B00343700B9E7A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C51ED331B00341300B9E7A0 /* JavaScriptCore.framework */,
+			);
+			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,24 +112,6 @@
 			productReference = 5C51ED131B00307800B9E7A0 /* JavaScriptCoreInjector.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5C51ED1D1B00307800B9E7A0 /* JavaScriptCoreInjectorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5C51ED2C1B00307800B9E7A0 /* Build configuration list for PBXNativeTarget "JavaScriptCoreInjectorTests" */;
-			buildPhases = (
-				5C51ED1A1B00307800B9E7A0 /* Sources */,
-				5C51ED1B1B00307800B9E7A0 /* Frameworks */,
-				5C51ED1C1B00307800B9E7A0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5C51ED211B00307800B9E7A0 /* PBXTargetDependency */,
-			);
-			name = JavaScriptCoreInjectorTests;
-			productName = JavaScriptCoreInjectorTests;
-			productReference = 5C51ED1E1B00307800B9E7A0 /* JavaScriptCoreInjectorTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,9 +122,6 @@
 				ORGANIZATIONNAME = "Sash Zats";
 				TargetAttributes = {
 					5C51ED121B00307800B9E7A0 = {
-						CreatedOnToolsVersion = 6.3.1;
-					};
-					5C51ED1D1B00307800B9E7A0 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
@@ -168,20 +139,12 @@
 			projectRoot = "";
 			targets = (
 				5C51ED121B00307800B9E7A0 /* JavaScriptCoreInjector */,
-				5C51ED1D1B00307800B9E7A0 /* JavaScriptCoreInjectorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5C51ED111B00307800B9E7A0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5C51ED1C1B00307800B9E7A0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -199,22 +162,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C51ED1A1B00307800B9E7A0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5C51ED211B00307800B9E7A0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5C51ED121B00307800B9E7A0 /* JavaScriptCoreInjector */;
-			targetProxy = 5C51ED201B00307800B9E7A0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5C51ED271B00307800B9E7A0 /* Debug */ = {
@@ -337,36 +285,6 @@
 			};
 			name = Release;
 		};
-		5C51ED2D1B00307800B9E7A0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = JavaScriptCoreInjectorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		5C51ED2E1B00307800B9E7A0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = JavaScriptCoreInjectorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -384,14 +302,6 @@
 			buildConfigurations = (
 				5C51ED2A1B00307800B9E7A0 /* Debug */,
 				5C51ED2B1B00307800B9E7A0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		5C51ED2C1B00307800B9E7A0 /* Build configuration list for PBXNativeTarget "JavaScriptCoreInjectorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5C51ED2D1B00307800B9E7A0 /* Debug */,
-				5C51ED2E1B00307800B9E7A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
