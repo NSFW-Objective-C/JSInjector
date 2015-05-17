@@ -120,7 +120,7 @@ Protocol *JSIExportClass(Class cls) {
     }
     
 #ifdef INJ_DEBUG_LOG
-    NSMutableString *log = [NSMutableString stringWithString:INJJSExportProtocolNameForClass(cls)];
+    NSMutableString *log = [NSMutableString stringWithString:JSIProtocolNameForClass(cls)];
 #endif
     
     // Creating protocol
@@ -133,7 +133,7 @@ Protocol *JSIExportClass(Class cls) {
     if (cls != [NSObject class] && superclass != [NSObject class]) {
         protocol_addProtocol(protocol, JSIProtocolForClass(superclass));
 #ifdef INJ_DEBUG_LOG
-        [log appendFormat:@"\nSuperprotocol: %@", INJJSExportProtocolNameForClass(superclass)];
+        [log appendFormat:@"\nSuperprotocol: %@", JSIProtocolNameForClass(superclass)];
 #endif
     }
     
@@ -224,7 +224,10 @@ Protocol *JSIExportClass(Class cls) {
         strcpy(dst, src);
         injProtocol->extendedMethodTypes[i] = dst;
     }
-    NSCAssert(class_addProtocol(cls, protocol), @"Failed to add protocol");
+    
+    if (!class_addProtocol(cls, protocol)) {
+        return nil;
+    }
 #ifdef INJ_DEBUG_LOG
     NSLog(@"\n\n%@", log);
 #endif
