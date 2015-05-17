@@ -69,7 +69,8 @@ static BOOL JSIIsBlacklistedClass(Class cls) {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         blacklist = [NSSet setWithObjects:
-            @"_NSZombie_"
+            @"_NSZombie_", @"NSDecimalNumber", @"NSMethodSignature",
+            @"CAAnimation", @"CADisplayLink", @"CAEAGLLayer", @"CAEmitterLayer", @"CAGradientLayer"
         , nil];
     });
     const char *cClassName = class_getName(cls);
